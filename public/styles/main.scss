@@ -1,0 +1,8 @@
+//impot file
+@import 'config';
+@import 'dashboard';
+
+body{
+    background: $primary-color;
+    overflow-x: hidden;
+}
