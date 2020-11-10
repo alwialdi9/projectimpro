@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('styles/main.css')}}">
-    <title>Dashboard</title>
-</head>
-<body>
+@extends('template.app')
+
+@section('content')
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -28,7 +21,7 @@
                   <a class="nav-link" href="#">Bukti</a>
                 </li>
               </ul>
-              <p class="nav-user">Hi, cuk</p>
+              <p class="nav-user"><a href="{{ url('/login') }}">Sign In</a> </p>
               <img src="img/AssetDasboard/polisi.png" width="35">
         </div>
       </nav>
@@ -51,11 +44,11 @@
                 <div class="container-col2">
                         <table class="container-col2-countdown">
                             <tr>
-                                <td id="hours">4</td>
+                                <td id="hours">0</td>
                                 <td>:</td>
-                                <td id="minutes" >12</td>
+                                <td id="minutes" >00</td>
                                 <td>:</td>
-                                <td id="seconds">22</td>
+                                <td id="seconds">00</td>
                             </tr>    
                         </table>
                     <div class="container-col2-title2">
@@ -80,8 +73,4 @@
     </section>
 
 </main>
-<script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
-<script src="{{asset('assets/js/countdown.js')}}"></script>
-<script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
-</body>
-</html>
+@endsection
