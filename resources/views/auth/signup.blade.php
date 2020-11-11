@@ -6,6 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('styles/auth.css')}}">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>S.I.P.A &mdash; {{ $title }}</title>
 </head>
 <body>
@@ -16,28 +17,29 @@
                     <img src="img/AssetSignIn/1123.png" class="img-background-signup">
                 </div>
                 <div class="col-4">
-                    <form class="mt-5">
+                    <form class="mt-5" method="POST" action="{{ url('register') }}">
+                        {{ csrf_field() }}
                         <div class="container-col-title">
                             <h2 class="primary-text text-center">Sign Up</h2>
                         </div>
                         <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Name">
+                          <input type="text" class="form-control" placeholder="Name" name="nama">
                         </div>
                         <div class="form-group">
-                          <input type="email" class="form-control" placeholder="Email">
+                          <input type="email" class="form-control" placeholder="Email" name="email">
                         </div>
                         <div class="form-group">
                             <div class="input-group mb-2 mr-sm-2">
                                 <div class="input-group-prepend">
                                   <div class="input-group-text form-no">+62</div>
                                 </div>
-                                <input type="text" class="form-control nomor" id="inlineFormInputGroupUsername2" placeholder="Phone Number">
+                                <input type="text" class="form-control nomor" id="inlineFormInputGroupUsername2" placeholder="Phone Number" name="nomor_hp">
                               </div>
 
                           
                         </div>
                         <div class="form-group mb-3">
-                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
                         </div>
 
                         <div class="btn-login mt-3">

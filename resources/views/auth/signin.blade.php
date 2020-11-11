@@ -6,27 +6,36 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('styles/auth.css')}}">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>S.I.P.A &mdash; {{ $title }}</title>
 </head>
 <body>
     <div id="app" class="bg-white">
         <div class="container">
+
+            @if (Session::has('notif'))
+        <script>
+        swal("Information!", "{{ Session::get('notif') }}", "info");
+        </script>
+            @endif
+
             <div class="row">
                 <div class="col">
                     <img src="img/AssetLogin/gambar kiri@2x.png" class="img-background-2">
                 </div>
                 <div class="col-4">
-                    <form class="mt-5">
+                    <form class="mt-5" method="POST" action="{{ url('/signin') }}">
+                        @csrf
                         <div class="container-col-title">
                             <h2 class="primary-text text-center">Sign In</h2>
                         </div>
                         <div class="form-group">
                           <label for="exampleInputEmail1" class="form-text text-muted mx-2">Email or Phone Number</label>
-                          <input type="email" class="form-control">
+                          <input type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
                         </div>
                         <div class="form-group mb-3">
                           <label for="exampleInputPassword1" class="form-text text-muted mx-2">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
+                          <input type="password" class="form-control" id="exampleInputPassword1" name="password" required>
                         </div>
 
                         <div class="btn-login mt-3">

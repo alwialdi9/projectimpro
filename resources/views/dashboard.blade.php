@@ -21,7 +21,13 @@
                   <a class="nav-link" href="#">Bukti</a>
                 </li>
               </ul>
-              <p class="nav-user"><a href="{{ url('/login') }}">Sign In</a> </p>
+              <p class="nav-user">
+                  @if (Session::has('nama'))
+                      Hi, {{ Session::get('nama') }}
+                  @else
+                  <a href="{{ url('/login') }}">Sign In</a> 
+                  @endif
+                </p>
               <img src="img/AssetDasboard/polisi.png" width="35">
         </div>
       </nav>

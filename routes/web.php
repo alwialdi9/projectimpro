@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'DashboardController@index');
+Route::get('/dashboard', 'DashboardController@index');
 
 Route::get('/login', 'AuthController@index');
 Route::get('/register', 'AuthController@create');
+Route::get('/logout', 'AuthController@destroy');
+Route::post('/register', 'AuthController@store');
+Route::post('/signin', 'AuthController@signin');
