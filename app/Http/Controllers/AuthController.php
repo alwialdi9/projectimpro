@@ -24,7 +24,8 @@ class AuthController extends Controller
      */
     public function create()
     {
-        //
+        $title = 'Sign Up';
+        return view('auth.signup', compact('title'));
     }
 
     /**

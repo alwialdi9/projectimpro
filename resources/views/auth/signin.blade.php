@@ -46,7 +46,7 @@
                         <a href="" class="mx-3 img-sosmed"><img src="img/AssetLogin/d2e5359f8402cb8d3d7b22c463f9013b.png" alt="" width="30" height="30" class="btn-fb"></a>
                       </div>
 
-                      <a href=""><h2 class="text-center mt-4 forgot">Forget Password?</h2></a>
+                      <h2 class="text-center mt-4 forgot"><span style="opacity: 65%;">Dont have an Account?</span><a href="{{ url('/register') }}"> Sign Up</a></h2>
                       
 
                 </div>
