@@ -1,0 +1,51 @@
+.event{
+    background: url('../img/AssetEvent/EOTF-590.png') no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    .container{
+        
+        &-form{
+            background: $secondary-color;
+            position: relative;
+            border-radius: 25px;
+            top: 10rem;
+            padding: 3rem;
+            letter-spacing: 1px;
+            &-judul{
+                font-family: GilroyBold;
+                font-size: 1.5rem;
+            }
+
+            .inputEvent{
+                margin-top: 1rem;
+                font-family: Gilroy;
+                font-weight: $font-sedang;
+            }
+
+            .form-control{
+                border-radius: 25px;
+            }
+        }
+
+        &-notice{
+            font-size: 0.8rem;
+            font-family: Gilroy;
+        }
+
+        .btn-event{
+            background: $primary-color;
+            border-radius: 25px;
+            width: 35%;
+            color: #fff;
+            font-family: Gilroy;
+            float: right;
+        }
+
+        .btn-event:hover{
+            color: $primary-color;
+            background: #fff;
+        }
+    }
+}
+
