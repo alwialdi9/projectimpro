@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Gilroy-ExtraBold;
+    src: url("../font/Gilroy-ExtraBold.otf") format("truetype");
+  }
+
+  @font-face {
+    font-family: Gilroy;
+    src: url("../font/Gilroy-Light.otf") format("truetype");
+  }
+
+html body {
+    background: #ffffff;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-width: 100%;
+  }
+
+input[type=email]{
+    border: 1px solid #00000010;
+    border-radius: 40px;
+    box-shadow: 0px 5px #00000016;
+    height: 50px;
+    padding-left: 20px;
+}
+
+input[type=text]{
+    border: 1px solid #00000010;
+    border-radius: 40px;
+    box-shadow: 0px 5px #00000016;
+    height: 50px;
+    padding-left: 20px;
+}
+
+
+.form-no{
+    border: 1px solid #00000010;
+    border-radius: 40px;
+    box-shadow: 0px 5px #00000016;
+    height: 50px;
+    /* padding-left: 20px; */
+}
+
+input[type=password]{
+    border: 1px solid #00000010;
+    border-radius: 40px;
+    box-shadow: 0px 5px #00000016;
+    height: 50px;
+    padding-left: 20px;
+}
+
+.container-col-title{
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+.container-col-title .primary-text{
+    font-family: Gilroy-ExtraBold;
+}
+
+.btn-login{
+    text-align: center;
+}
+
+.btn-1{
+    margin-top: 15px;
+    background-color: #31BCB9;
+    border: none;
+    border-radius: 40px;
+    color: #ffffff;
+    font-family: Gilroy-ExtraBold;
+    font-size: large;
+    width: 200px;
+}
+
+.sosmed{
+    text-align: center;
+}
+
+.img-sosmed{
+    display: inline-block;
+    background: #ECECEC;
+    position: relative;
+    /* text-align: center; */
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+.btn-fb{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.btn-google{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.forgot{
+    font-family: Gilroy;
+    font-size: 18px;
+    color: #31BCB9;
+}
+
+span{
+    color: black;
+}
+
+.img-background-2 {
+    object-fit: cover;
+    position: absolute;
+    width: 120%;
+    height: 110vh;
+    top: -10%;
+    right: 5%;
+  }
+
+  .img-background-signup {
+    object-fit: cover;
+    position: absolute;
+    width: 110%;
+    height: 145vh;
+    top: -40%;
+    right: 8%;
+  }

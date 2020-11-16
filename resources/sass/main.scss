@@ -1,0 +1,10 @@
+//impot file
+@import 'config';
+@import 'dashboard';
+@import 'eventForm';
+@import 'eventregist';
+
+body{
+    background: $primary-color;
+    overflow-x: hidden;
+}

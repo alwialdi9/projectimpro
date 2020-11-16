@@ -1,0 +1,70 @@
+//color
+$primary-color: #ff8400;
+$secondary-color: #d5d5c9;
+
+//font-weight
+$font-tipis: 300;
+$font-sedang: 500;
+$font-tebel: 800;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: Gilbert;
+    src: url('../font/Gilbert-Bold\ Preview5.otf') format('truetype');
+}
+
+@font-face{
+    font-family: Gilroy;
+    src: url('../font/Gilroy-Light.otf') format('truetype');
+}
+
+@font-face{
+    font-family: GilroyBold;
+    src: url('../font/Gilroy-ExtraBold.otf') format('truetype');
+}
+
+@mixin button {
+    background: $primary-color;
+    width: 10rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: $font-tebel;
+    letter-spacing: 1.5px;
+    border-color: $primary-color;
+}
+
+@mixin buttonWrap{
+    border-style: solid;
+    border-radius: 50px;
+    background-color: transparent;
+    border-color: $primary-color;
+    padding: 0.5rem;
+}
+
+// html {
+//     font-size: 62.5%;
+// }
+
+@mixin responsive($breakpoint){
+    
+    @if $breakpoint == xs{
+        @media screen and (max-width: 500px){@content};
+    }
+    @if $breakpoint == sm{
+        @media screen and (max-width: 660px){@content};
+    }
+    @if $breakpoint == md{
+        @media screen and (max-width: 910px){@content};
+    }
+    @if $breakpoint == lg{
+        @media screen and (max-width: 1200px){@content};
+    }
+    @if $breakpoint == xl{
+        @media screen and (max-width: 1500px){@content};
+    }
+}
