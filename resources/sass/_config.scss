@@ -46,6 +46,11 @@ $font-tebel: 800;
     padding: 0.5rem;
 }
 
+@mixin wrap($x, $y, $blur, $color){
+    background: #fff;
+    box-shadow: $x $y $blur $color;
+}
+
 // html {
 //     font-size: 62.5%;
 // }

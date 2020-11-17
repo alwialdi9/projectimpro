@@ -1,0 +1,26 @@
+.event-list{
+    height: 100vh;
+    background: $secondary-color;
+}
+
+.container-eventlist{
+    background: #fff;
+    position: relative;
+    top: 5%;
+
+    .row{
+       
+        .col-11{
+            padding: 2rem 0 0 0;
+            
+            .judul-text{
+                color: $primary-color;
+                font-family: Gilbert;
+            }
+
+            table{
+                margin-top: 1.5rem;
+            }
+        } 
+    }
+}

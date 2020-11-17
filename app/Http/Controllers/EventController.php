@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 class EventController extends Controller
 {
+    /** EVENT FORM*/
+
     /**
      * Display a listing of the resource.
      *
@@ -15,12 +17,6 @@ class EventController extends Controller
     {
         $title = 'Event';
         return view('event.eventform', compact('title'));
-    }
-
-    public function eventJoin()
-    {
-        $title = 'Event Register';
-        return view('event.eventregister', compact('title'));
     }
 
     /**
@@ -87,5 +83,23 @@ class EventController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+
+
+
+    /** EVENT REGISTER */
+    public function eventJoin()
+    {
+        $title = 'Event Register';
+        return view('event.eventregister', compact('title'));
+    }
+
+
+    /**EVENT LIST */
+    public function eventList()
+    {
+        $title = 'Event List';
+        return view('event.listevent', compact('title'));
     }
 }

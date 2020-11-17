@@ -321,6 +321,30 @@
   background: #ffffff;
 }
 
+.event-list {
+  height: 100vh;
+  background: #d5d5c9;
+}
+
+.container-eventlist {
+  background: #fff;
+  position: relative;
+  top: 5%;
+}
+
+.container-eventlist .row .col-11 {
+  padding: 2rem 0 0 0;
+}
+
+.container-eventlist .row .col-11 .judul-text {
+  color: #ff8400;
+  font-family: Gilbert;
+}
+
+.container-eventlist .row .col-11 table {
+  margin-top: 1.5rem;
+}
+
 body {
   background: #ff8400;
   overflow-x: hidden;

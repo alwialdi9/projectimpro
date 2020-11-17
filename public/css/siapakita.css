@@ -88,34 +88,38 @@ body {
   text-align: justify;
   font-style: italic;
 }
-.btn {
+
+.col-btn{
   border-style: solid;
+  border-radius: 50px;
+  background-color: transparent;
+  border-color: #ffffff;
+  padding: 2rem;
+  position: relative;;
+  top: 5rem;
+  width: 12rem;
+  height: 5rem;
+  left: 50rem;
+}
+
+.col-btn .btn {
   border-radius: 50px;
   background-color: white;
   border-color: white;
   padding: 0.5rem;
-  position: relative;
-  bottom: -4rem;
-  left: 50rem;
-  width: 11.5rem;
-  font-family: gilbert;
+  position: absolute;
+  width: 10rem;
+  font-family: gilroy;
   font-size: 1.7rem;
   color: #ff8400;
-}
-.btn .btn-1 {
-  background:white;
-  width: 10rem;
-  border-radius: 50px;
-  
-  font-weight: 800;
   letter-spacing: 1.5px;
-  border-color:white;
-  font-family: gilroy;
+  font-weight: 800;
+  right: 0.8rem;
+  bottom: 0.5rem;
 }
+
 .btn:hover{
   background-color: transparent;
   color: white;
 }
-
-
 

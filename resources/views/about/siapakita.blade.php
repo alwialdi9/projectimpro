@@ -30,12 +30,14 @@
                           </div> 
                       </div>
 
-                              <div class="row">
-                                      <div class="col-sm-7"></div>
-                                      <div class="col-sm-5">It's Easy and It's Simple</div>
+                          <div class="row">
+                                <div class="col-sm-7"></div>
+                                    <div class="col-sm-5">It's Easy and It's Simple
+                                    </div>
                               </div>
-                              <button type="button" class="btn btn-1" >Join</button>
-                        
+                                <div class="col-btn">
+                                <a href="{{url('/event-register')}}" class="btn btn-1" >Join</a>
+                              </div>
         </div>
   
                 
