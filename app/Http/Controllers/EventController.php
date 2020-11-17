@@ -17,9 +17,7 @@ class EventController extends Controller
         return view('event.eventform', compact('title'));
     }
 
-<<<<<<< HEAD
-=======
-     /**
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -30,7 +28,6 @@ class EventController extends Controller
         return view('event.eventregister', compact('title'));
     }
 
->>>>>>> origin
     /**
      * Show the form for creating a new resource.
      *

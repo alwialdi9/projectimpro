@@ -262,13 +262,8 @@
   background: #ff8400;
   border-radius: 25px;
   width: 35%;
-<<<<<<< HEAD
   color: #fff;
   font-family: Gilroy;
-=======
-  font-family: Gilroy;
-  color: #fff;
->>>>>>> origin
   float: right;
 }
 
@@ -277,8 +272,6 @@
   background: #fff;
 }
 
-<<<<<<< HEAD
-=======
 .event-regist {
   height: 100vh;
   background: #d5d5c9;
@@ -328,7 +321,6 @@
   background: #ffffff;
 }
 
->>>>>>> origin
 body {
   background: #ff8400;
   overflow-x: hidden;
