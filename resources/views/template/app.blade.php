@@ -6,6 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
+    <link rel="stylesheet" href="{{asset('css/siapakita.css')}}">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>S.I.P.A &mdash; {{ $title }}</title>
 </head>
@@ -20,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav justify-content-end navbar-nav mr-auto center">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Siapa Kita</a>
+                      <a class="nav-link" href="{{ url('/siapakita') }}">Siapa Kita</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="{{ url('/event') }}">Event</a>

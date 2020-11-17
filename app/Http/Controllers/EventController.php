@@ -17,20 +17,6 @@ class EventController extends Controller
         return view('event.eventform', compact('title'));
     }
 
-<<<<<<< HEAD
-=======
-     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function eventJoin()
-    {
-        $title = 'Event Register';
-        return view('event.eventregister', compact('title'));
-    }
-
->>>>>>> origin
     /**
      * Show the form for creating a new resource.
      *
