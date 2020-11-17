@@ -23,6 +23,11 @@ $font-tebel: 800;
     src: url('../font/Gilroy-Light.otf') format('truetype');
 }
 
+@font-face{
+    font-family: GilroyBold;
+    src: url('../font/Gilroy-ExtraBold.otf') format('truetype');
+}
+
 @mixin button {
     background: $primary-color;
     width: 10rem;

@@ -111,16 +111,16 @@ span{
 }
 
 .img-background-2 {
-    background-size: cover;
+    object-fit: cover;
     position: absolute;
     width: 120%;
     height: 110vh;
-    top: -14%;
+    top: -10%;
     right: 5%;
   }
 
   .img-background-signup {
-    background-size: cover;
+    object-fit: cover;
     position: absolute;
     width: 110%;
     height: 145vh;

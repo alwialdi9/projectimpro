@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('styles/auth.css')}}">
+    <link rel="stylesheet" href="{{asset('css/auth.css')}}">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>S.I.P.A &mdash; {{ $title }}</title>
 </head>
@@ -14,7 +14,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img src="img/AssetSignIn/1123.png" class="img-background-signup">
+                    <img src="img/AssetSignin/1123.png" class="img-background-signup">
                 </div>
                 <div class="col-4">
                     <form class="mt-5" method="POST" action="{{ url('register') }}">
