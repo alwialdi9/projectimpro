@@ -1,0 +1,48 @@
+.event-regist{
+    height: 100vh;
+    background: $secondary-color;
+}
+.container-event{
+    position: relative;
+    top: 5%;
+    height: 80%;
+    font-family: GilroyBold;
+    letter-spacing: 1px;
+
+    &-text{
+        color: #3e3e3d;
+    }
+
+    &-form{
+        font-family: Gilroy;
+        font-weight: $font-tebel;
+
+        .form-group{
+            margin-top: 2rem;
+            
+            .form-control-file{
+                background: #ffffff;
+                padding: 1rem;
+                border-radius: 10px;
+            }
+
+            .form-control{
+                border-radius: 10px;
+            }
+        }
+
+        .btn-event-regist{
+            border-radius: 25px;
+            width: 12%;
+            background: #3e3e3d;
+            color: #ffffff;
+            font-weight: $font-tebel;
+        }
+
+        .btn-event-regist:hover{
+            color: #3e3e3d;
+            background: #ffffff;
+        }
+    }
+    
+}

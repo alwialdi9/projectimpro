@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class EventController extends Controller
+class AboutController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,24 +14,10 @@ class EventController extends Controller
      */
     public function index()
     {
-        $title = 'Event';
-        return view('event.eventform', compact('title'));
+        $title = 'Siapa Kita';
+        return view('about.siapakita', compact('title'));
     }
 
-<<<<<<< HEAD
-=======
-     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function eventJoin()
-    {
-        $title = 'Event Register';
-        return view('event.eventregister', compact('title'));
-    }
-
->>>>>>> origin
     /**
      * Show the form for creating a new resource.
      *
