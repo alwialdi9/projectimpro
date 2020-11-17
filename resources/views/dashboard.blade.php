@@ -2,7 +2,36 @@
 
 @section('content')
 
-
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">S.I.P.A</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav justify-content-end navbar-nav mr-auto center">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Siapa Kita</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Event</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Bukti</a>
+                </li>
+              </ul>
+              <p class="nav-user">
+                  @if (Session::has('nama'))
+                      Hi, {{ Session::get('nama') }}
+                  @else
+                  <a href="{{ url('/login') }}">Sign In</a> 
+                  @endif
+                </p>
+              <img src="img/AssetDasboard/polisi.png" width="35">
+        </div>
+      </nav>
+</header>
 
 <main>
     <section class="dashboard">
