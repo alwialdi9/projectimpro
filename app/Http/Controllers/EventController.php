@@ -17,6 +17,12 @@ class EventController extends Controller
         return view('event.eventform', compact('title'));
     }
 
+    public function eventJoin()
+    {
+        $title = 'Event Register';
+        return view('event.eventregister', compact('title'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
