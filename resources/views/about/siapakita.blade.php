@@ -1,5 +1,9 @@
 @extends('template.app')
 
+@section('css')
+<link rel="stylesheet" href="{{asset('css/siapakita.css')}}">
+@endsection
+
 @section('content')
 
 
@@ -38,5 +42,4 @@
     </section>
 
 </main>
-
 @endsection
