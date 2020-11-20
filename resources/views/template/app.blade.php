@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/main.css')}}">
-    <link rel="stylesheet" href="{{asset('css/siapakita.css')}}">
+    @yield('css')
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>S.I.P.A &mdash; {{ $title }}</title>
 </head>
@@ -24,7 +23,7 @@
                       <a class="nav-link" href="{{ url('/siapakita') }}">Siapa Kita</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{{ url('/event') }}">Event</a>
+                      <a class="nav-link" href="{{url('/event-list')}}">Event</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Bukti</a>
@@ -43,9 +42,12 @@
     </header>
 @yield('content')
 
-<script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 <script src="{{asset('assets/js/countdown.js')}}"></script>
 <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
+
+<script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 </body>
 
 </html>

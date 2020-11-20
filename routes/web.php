@@ -13,13 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Dashboard
 Route::get('/', 'DashboardController@index');
 Route::get('/dashboard', 'DashboardController@index');
-Route::get('/event', 'EventController@index');
-Route::get('/event-register', 'EventController@eventJoin');
+
+//Event
+Route::get('/event', 'EventController@create');
+Route::post('/event-create', 'EventController@store');
+Route::get('/event-list', 'EventController@index');
+Route::post('/event-register', 'EventController@store');
+
+
+//Auth
 Route::get('/login', 'AuthController@index');
 Route::get('/register', 'AuthController@create');
 Route::get('/logout', 'AuthController@destroy');
 Route::post('/register', 'AuthController@store');
 Route::post('/signin', 'AuthController@signin');
+
+//About
 Route::get('/siapakita', 'AboutController@index');

@@ -19,6 +19,12 @@
         </script>
             @endif
 
+            @if (Session::has('alert'))
+            <script>
+                swal("Peringatan!", "{{ Session::get('alert') }}", "error");
+                </script>
+            @endif
+
             <div class="row">
                 <div class="col">
                     <img src="img/AssetLogin/gambar kiri@2x.png" class="img-background-2">

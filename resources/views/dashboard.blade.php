@@ -1,8 +1,14 @@
 @extends('template.app')
-
+@section('css')
+<link rel="stylesheet" href="{{asset('css/main.css')}}">
+@endsection
 @section('content')
 
-
+@if (Session::has('alert'))
+            <script>
+                swal("Peringatan!", "{{ Session::get('alert') }}", "error");
+                </script>
+            @endif
 
 <main>
     <section class="dashboard">
@@ -13,9 +19,10 @@
                         <h2 class="primary-text">Kamu Mau Buat Event?</h2>
                         <p class="secondary-text">Yuk ceritakan event apa yang ingin kamu buat <br> bersama kami.</p>
                     </div>
+                    
                         <img class="img1" src="img/AssetDasboard/polisi.png" width="300">
                             <div class="container-col-btn">
-                                <button type="button" class="btn btn-primary btn1">Join</button>
+                            <a href="{{url('/event')}}" class="btn btn-primary btn1">Join</a>
                         </div>
                 </div>
                 <div class="container-col2">
@@ -31,7 +38,7 @@
                     <div class="container-col2-title2">
                         <h4>Ada <strong>Event</strong> Apa <br>Hari Ini?</h4>
                     </div>
-                    <button type="button" class="btn btn-primary container-col2-btn">Lihat</button>
+                <a href="{{url('/event-list')}}" class="btn btn-primary container-col2-btn">Lihat</a>
                 </div>
             
 

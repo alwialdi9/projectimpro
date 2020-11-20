@@ -1,6 +1,12 @@
 @extends('template.app')
 
+@section('css')
+<link rel="stylesheet" href="{{asset('css/siapakita.css')}}">
+@endsection
+
 @section('content')
+
+
 <main>
     <section class="siapakita">
         <div class="container">
@@ -24,15 +30,16 @@
                           </div> 
                       </div>
 
-                              <div class="row">
-                                      <div class="col-sm-7"></div>
-                                      <div class="col-sm-5">It's Easy and It's Simple</div>
+                          <div class="row">
+                                <div class="col-sm-7"></div>
+                                    <div class="col-sm-5">"Easy and Simple"
+                                    </div>
                               </div>
-                              <button type="button" class="btn btn-1" >Join</button>
-                        
+                                <div class="col-btn">
+                                <a href="{{url('/event')}}" class="btn btn-1" >Join</a>
+                              </div>
         </div>
     </section>
 
 </main>
-
 @endsection
