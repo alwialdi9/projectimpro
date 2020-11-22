@@ -10,7 +10,7 @@
 
 @section('content')
 
-<main>
+<main class="test">
     <section class="event-regist">
         <div class="container container-event">
             <div class="row justify-content-center">
@@ -38,6 +38,7 @@
 
                         <div class="form-group">
                             <label for="tanggalEvent">Tanggal Event</label>
+                            <i class="far fa-calendar-alt"></i>
                             <input type="text" class="form-control-file" id="tanggalEvent" name="tanggalEvent" placeholder="Masukkan tanggal event berlangsung" autocomplete="off" value="">
                         </div> 
 

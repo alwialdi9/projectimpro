@@ -36,16 +36,24 @@
                       <a href="{{ url('/login') }}">Sign In</a> 
                       @endif
                     </p>
-                  <img src="img/AssetDasboard/polisi.png" width="35">
+                   <ul class="nav-icon ">
+                    <li class="nav-item dropdown icon">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user-circle"></i>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="{{url('/logout')}}">Logout</a>
+                      </div>
+                    </li>
+                  </ul> 
             </div>
           </nav>
     </header>
 @yield('content')
 
+<script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 <script src="{{asset('assets/js/countdown.js')}}"></script>
 <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
-
-<script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 </body>
