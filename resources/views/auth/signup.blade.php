@@ -23,23 +23,39 @@
                             <h2 class="primary-text text-center">Sign Up</h2>
                         </div>
                         <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Name" name="nama">
+                          <input type="text" class="form-control @error('nama') is-invalid @enderror" placeholder="Name" name="nama" autofocus autocomplete="off" value="{{ old('nama') }}">
+
+                          @error('nama')
+                                <div class="invalid-feedback mt-2">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="form-group">
-                          <input type="email" class="form-control" placeholder="Email" name="email">
+                          <input type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" name="email" value="{{ old('email') }}">
+
+                          @error('email')
+                                <div class="invalid-feedback mt-2">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <div class="input-group mb-2 mr-sm-2">
                                 <div class="input-group-prepend">
                                   <div class="input-group-text form-no">+62</div>
                                 </div>
-                                <input type="text" class="form-control nomor" id="inlineFormInputGroupUsername2" placeholder="Phone Number" name="nomor_hp">
+                                <input type="text" class="form-control nomor @error('nomor_hp') is-invalid @enderror" id="number" placeholder="Phone Number" name="nomor_hp" value="{{ old('nomor_hp') }}"  onkeypress="return hanyaAngka(event)">
+
+                                @error('nomor_hp')
+                                <div class="invalid-feedback mt-2">{{ $message }}</div>
+                            @enderror
                               </div>
 
                           
                         </div>
                         <div class="form-group mb-3">
-                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+                          <input type="password" class="form-control @error('password') is-invalid @enderror" id="exampleInputPassword1" placeholder="Password" name="password">
+
+                          @error('password')
+                                <div class="invalid-feedback mt-2">{{ $message }}</div>
+                            @enderror
                         </div>
 
                         <div class="btn-login mt-3">
@@ -54,6 +70,17 @@
               </div>
         </div>
     </div>
+
+    <script>
+      function hanyaAngka(evt) {
+        var charCode = (evt.which) ? evt.which : event.keyCode
+         if (charCode > 31 && (charCode < 48 || charCode > 57))
+   
+          return false;
+        return true;
+      }
+    </script>
+
 
 <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 <script src="{{asset('assets/js/countdown.js')}}"></script>

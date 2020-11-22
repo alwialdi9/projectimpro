@@ -41,15 +41,26 @@ class AuthController extends Controller
     {
         $this->validate($request, [
             'nama' => 'required',
-            'email' => 'required|min:4|email|unique:tb_users',
+            'email' => 'required|min:4|email:rfc,dns|unique:tb_users',
             'password' => 'required|min:4',
-            'nomor_hp' => 'required|numeric',
+            'nomor_hp' => 'required|numeric|min:10',
+        ], [
+            'email.required' => 'We need to know your e-mail address!',
+            'nama.required' => 'We need to know your name',
+            'email.min' => 'oops, your email is wrong',
+            'email.unique' => 'oops, your email already registered',
+            'password.required' => 'enter a password for your security',
+            'password.min' => 'your password is weak',
+            'nomor_hp.required' => 'We need to know your phone number',
+            'nomor_hp.numeric' => 'oops, something is wrong',
+            'nomor_hp.max' => 'oops, you send too many numbers',
+            'nomor_hp.min' => 'oops, something is wrong'
         ]);
 
         User::create([
             'nama' => $request->nama,
             'email' => $request->email,
-            'nomor_hp' => $request->nomor_hp,
+            'nomor_hp' => '0' . $request->nomor_hp,
             'password' => Hash::make($request->password),
         ]);
 

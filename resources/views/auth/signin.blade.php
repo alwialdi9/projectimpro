@@ -19,6 +19,12 @@
         </script>
             @endif
 
+            @if (Session::has('addSuccess'))
+        <script>
+        swal("Success!", "{{ Session::get('addSuccess') }}", "success");
+        </script>
+            @endif
+
             @if (Session::has('alert'))
             <script>
                 swal("Peringatan!", "{{ Session::get('alert') }}", "error");

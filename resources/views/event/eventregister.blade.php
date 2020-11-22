@@ -24,27 +24,47 @@
                         <div class="form-group">
                             <label for="suratpengantar">Surat Pengantar</label>
                             <input type="file" class="form-control-file" id="suratpengantar" name="pengantar">
+
+                            @error('pengantar')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
 
                         <div class="form-group">
                             <label for="proposal">Proposal Acara</label>
                             <input type="file" class="form-control-file" id="proposal" name="proposal">
+
+                            @error('proposal')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
 
                         <div class="form-group">
                             <label for="proposalkeramaian">Proposal Keramaian (jika peserta >500 orang)</label>
                             <input type="file" class="form-control-file" id="proposalkeramaian" name="proposalRamai">
+
+                            @error('proposalRamai')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
 
                         <div class="form-group">
                             <label for="tanggalEvent">Tanggal Event</label>
                             <i class="far fa-calendar-alt"></i>
-                            <input type="text" class="form-control-file" id="tanggalEvent" name="tanggalEvent" placeholder="Masukkan tanggal event berlangsung" autocomplete="off" value="">
+                            <input type="text" class="form-control" id="tanggalEvent" name="tanggalEvent" placeholder="Masukkan tanggal event berlangsung" autocomplete="off" value="">
+
+                            @error('tanggalEvent')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div> 
 
                         <div class="form-group">
                                 <label for="deskripsi">Deskripsi Acara</label>
-                                <textarea class="form-control" id="deskripsi" rows="6" name="deskripsi"></textarea>
+                                <textarea class="form-control is-invalid" id="deskripsi" rows="6" name="deskripsi"></textarea>
+
+                                @error('deskripsi')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>  
                         <button type="submit" class="btn btn-event-regist">Kirim</button>
                     </form>

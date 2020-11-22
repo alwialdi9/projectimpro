@@ -68,6 +68,15 @@ class EventController extends Controller
             }
         } else {
 
+            $request->validate([
+                'namaEvent' => 'required',
+                'lokasi' => 'required',
+                'email' => 'required',
+                'pengantar' => 'required|file|mimes:pdf,doc,docx',
+                'proposal' => 'required|file|mimes:pdf,doc,docx,pptx,ppt',
+                'proposalRamai' => 'required|file|mimes:pdf,doc,docx',
+                'deskripsi' => 'required|max:300',
+            ]);
 
             $pengantar = $request->file('pengantar');
             $nama_pengantar = $pengantar->getClientOriginalName();

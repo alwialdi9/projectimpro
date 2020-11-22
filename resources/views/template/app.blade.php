@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
     @yield('css')
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
     <title>S.I.P.A &mdash; {{ $title }}</title>
 </head>
 <body>
@@ -51,7 +52,6 @@
     </header>
 @yield('content')
 
-<script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 <script src="{{asset('assets/js/countdown.js')}}"></script>
 <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
