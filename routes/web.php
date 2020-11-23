@@ -18,9 +18,10 @@ Route::get('/', 'DashboardController@index');
 Route::get('/dashboard', 'DashboardController@index');
 
 //Event
-Route::get('/event', 'EventController@index');
-Route::get('/event-register', 'EventController@eventJoin');
-Route::get('/event-list', 'EventController@eventList');
+Route::get('/event', 'EventController@create');
+Route::post('/event-create', 'EventController@store');
+Route::get('/event-list', 'EventController@index');
+Route::post('/event-register', 'EventController@store');
 
 
 //Auth

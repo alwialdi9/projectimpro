@@ -32,15 +32,13 @@
 
                           <div class="row">
                                 <div class="col-sm-7"></div>
-                                    <div class="col-sm-5">It's Easy and It's Simple
+                                    <div class="col-sm-5">"Easy and Simple"
                                     </div>
                               </div>
                                 <div class="col-btn">
-                                <a href="{{url('/event-register')}}" class="btn btn-1" >Join</a>
+                                <a href="{{url('/event')}}" class="btn btn-1" >Join</a>
                               </div>
         </div>
-  
-                
     </section>
 
 </main>

@@ -18,25 +18,22 @@
                             <th scope="col">No</th>
                             <th scope="col">Nama Acara</th>
                             <th scope="col">Tanggal Acara</th>
+                            <th scope="col">Selesai Acara</th>
                             <th scope="col">Lokasi</th>
                             <th scope="col">Status</th>
                           </tr>
                         </thead>
                         <tbody class="table-body">
+                          @foreach ($event as $e)
                           <tr>
-                            <th scope="row">1</th>
-                            <td class="cuk">Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
+                            <th scope="row">{{ $loop->iteration }}</th>
+                            <td class="cuk">{{ $e->nama_event }}</td>
+                            <td>{{ date('d F Y', strtotime($e->mulai_acara)) }}</td>
+                            <td>{{ date('d F Y', strtotime($e->akhir_acara)) }}</td>
+                            <td>{{ $e->lokasi }}</td>
+                            <td>{{ $e->status }}</td>
                           </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>@mdo</td>
-                          </tr>
+                          @endforeach
                         </tbody>
                       </table>
                 </div>

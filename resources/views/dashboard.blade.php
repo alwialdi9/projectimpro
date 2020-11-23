@@ -4,7 +4,11 @@
 @endsection
 @section('content')
 
-
+@if (Session::has('alert'))
+            <script>
+                swal("Peringatan!", "{{ Session::get('alert') }}", "error");
+                </script>
+            @endif
 
 <main>
     <section class="dashboard">
@@ -18,7 +22,7 @@
                     
                         <img class="img1" src="img/AssetDasboard/polisi.png" width="300">
                             <div class="container-col-btn">
-                            <a href="{{url('/event-register')}}" class="btn btn-primary btn1">Join</a>
+                            <a href="{{url('/event')}}" class="btn btn-primary btn1">Join</a>
                         </div>
                 </div>
                 <div class="container-col2">

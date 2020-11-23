@@ -166,7 +166,9 @@
 .navbar{
     font-family: Gilbert;
     font-weight: $font-tipis;
-    
+    list-style-type: none;
+    text-decoration: none;
+
     &-brand{
         letter-spacing: 1.5px;
     }
@@ -175,6 +177,7 @@
         font-family: Gilroy;
         font-weight: $font-sedang;
         
+
         li:nth-child(odd){
             padding: 0 10rem 0 10rem;
         }
@@ -183,6 +186,15 @@
             color: $primary-color;
             margin-right: 1rem;
             margin-top: 0.5rem;
+        }
+
+        &-icon{
+            position: relative;
+            top: 0.4rem;
+            >li{
+                list-style-type: none;
+                text-decoration: none;
+            }
         }
     }
 }

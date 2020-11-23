@@ -201,6 +201,8 @@
 .navbar {
   font-family: Gilbert;
   font-weight: 300;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 .navbar-brand {
@@ -223,6 +225,16 @@
   margin-top: 0.5rem;
 }
 
+.navbar .nav-icon {
+  position: relative;
+  top: 0.4rem;
+}
+
+.navbar .nav-icon > li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
 .event {
   background: url("../img/AssetEvent/EOTF-590.png") no-repeat;
   background-size: cover;
@@ -233,7 +245,7 @@
   background: #d5d5c9;
   position: relative;
   border-radius: 25px;
-  top: 10rem;
+  top: 7.5rem;
   padding: 3rem;
   letter-spacing: 1px;
 }
@@ -273,7 +285,7 @@
 }
 
 .event-regist {
-  height: 100vh;
+  height: 140vh;
   background: #d5d5c9;
 }
 
