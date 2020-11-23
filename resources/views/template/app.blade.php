@@ -26,7 +26,7 @@
                       <a class="nav-link" href="{{ url('/event') }}">Event</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Bukti</a>
+                      <a class="nav-link" href="{{ url('/bukti') }}">Bukti</a>
                     </li>
                   </ul>
                   <p class="nav-user">

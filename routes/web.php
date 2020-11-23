@@ -32,3 +32,6 @@ Route::post('/signin', 'AuthController@signin');
 
 //About
 Route::get('/siapakita', 'AboutController@index');
+
+//Evidence
+Route::get('/bukti','BuktiController@index');

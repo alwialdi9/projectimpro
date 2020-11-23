@@ -26,7 +26,7 @@
   background-size: cover;
     position: absolute;
     width: 124%;
-    height: 84.5vh;
+    height: 85.5vh;
     top: 31%;
     right: -17%;
 }
@@ -96,7 +96,7 @@ body {
   border-color: #ffffff;
   padding: 2rem;
   position: relative;;
-  top: 5rem;
+  top: 3rem;
   width: 12rem;
   height: 5rem;
   left: 50rem;
