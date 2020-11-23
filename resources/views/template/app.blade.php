@@ -13,14 +13,13 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <a class="navbar-brand" href="{{ url('/dashboard') }}">S.I.P.A</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-          
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav justify-content-end navbar-nav mr-auto center">
+                <ul class="nav navbar-nav mr-auto justify-content-center">
                     <li class="nav-item">
                       <a class="nav-link" href="{{ url('/siapakita') }}">Siapa Kita</a>
                     </li>
@@ -57,6 +56,7 @@
 <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
 </body>
 
 </html>

@@ -156,4 +156,9 @@
     float: right;
     
 }
-      
+
+.row{
+  position: relative;
+  bottom: 1rem;
+}
+

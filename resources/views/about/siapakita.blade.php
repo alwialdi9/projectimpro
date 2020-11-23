@@ -2,6 +2,7 @@
 
 @section('css')
 <link rel="stylesheet" href="{{asset('css/siapakita.css')}}">
+<link rel="stylesheet" href="{{asset('css/main.css')}}">
 @endsection
 
 @section('content')

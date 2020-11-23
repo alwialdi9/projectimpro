@@ -177,9 +177,22 @@
         font-family: Gilroy;
         font-weight: $font-sedang;
         
+        @include responsive(sm){
+            margin-left: 0;
+        }
+        @include responsive(lg){
+            margin-left: 0;
+        }
 
         li:nth-child(odd){
             padding: 0 10rem 0 10rem;
+            
+            @include responsive(sm){
+                padding: 0;
+            }
+            @include responsive(lg){
+                padding: 0;   
+            }
         }
 
         &-user{
@@ -191,6 +204,11 @@
         &-icon{
             position: relative;
             top: 0.4rem;
+
+            @include responsive(sm){
+                right: 1rem;
+            }
+
             >li{
                 list-style-type: none;
                 text-decoration: none;
