@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
     @yield('css')
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
     <title>S.I.P.A &mdash; {{ $title }}</title>
 </head>
