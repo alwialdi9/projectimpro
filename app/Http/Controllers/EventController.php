@@ -68,7 +68,7 @@ class EventController extends Controller
             }
         } else {
 
-            $request->validate([
+            $this->validate($request, [
                 'namaEvent' => 'required',
                 'lokasi' => 'required',
                 'email' => 'required',
@@ -76,6 +76,9 @@ class EventController extends Controller
                 'proposal' => 'required|file|mimes:pdf,doc,docx,pptx,ppt',
                 'proposalRamai' => 'required|file|mimes:pdf,doc,docx',
                 'deskripsi' => 'required|max:300',
+            ], [
+                'required' => 'The field is required',
+                'mimes' => 'The field is wrong format'
             ]);
 
             $pengantar = $request->file('pengantar');

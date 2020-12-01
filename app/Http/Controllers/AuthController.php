@@ -39,6 +39,7 @@ class AuthController extends Controller
      */
     public function store(Request $request)
     {
+        Session::flash('afterlogin', true);
         $this->validate($request, [
             'nama' => 'required',
             'email' => 'required|min:4|email:rfc,dns|unique:tb_users',
@@ -46,6 +47,7 @@ class AuthController extends Controller
             'nomor_hp' => 'required|numeric|min:10',
         ], [
             'email.required' => 'We need to know your e-mail address!',
+            'email.email' => 'Format Email is Wrong',
             'nama.required' => 'We need to know your name',
             'email.min' => 'oops, your email is wrong',
             'email.unique' => 'oops, your email already registered',

@@ -26,14 +26,20 @@
                           <input type="text" class="form-control @error('nama') is-invalid @enderror" placeholder="Name" name="nama" autofocus autocomplete="off" value="{{ old('nama') }}">
 
                           @error('nama')
-                                <div class="invalid-feedback mt-2">{{ $message }}</div>
+                                <div class="invalid-feedback mt-2 ml-3">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class="form-group">
-                          <input type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" name="email" value="{{ old('email') }}">
+                          <input type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" name="email" value="{{ old('email') }}" aria-describedby="emailHelpBlock">
+
+                          @if (Session::has('afterlogin') == false)
+                          <small id="emailHelpBlock" class="form-text text-muted mt-2 ml-3">
+                            We'll never share your email
+                          </small>
+                          @endif
 
                           @error('email')
-                                <div class="invalid-feedback mt-2">{{ $message }}</div>
+                                <div class="invalid-feedback mt-2 ml-3">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class="form-group">
@@ -44,7 +50,7 @@
                                 <input type="text" class="form-control nomor @error('nomor_hp') is-invalid @enderror" id="number" placeholder="Phone Number" name="nomor_hp" value="{{ old('nomor_hp') }}"  onkeypress="return hanyaAngka(event)">
 
                                 @error('nomor_hp')
-                                <div class="invalid-feedback mt-2">{{ $message }}</div>
+                                <div class="invalid-feedback mt-2 ml-3">{{ $message }}</div>
                             @enderror
                               </div>
 
@@ -54,7 +60,7 @@
                           <input type="password" class="form-control @error('password') is-invalid @enderror" id="exampleInputPassword1" placeholder="Password" name="password">
 
                           @error('password')
-                                <div class="invalid-feedback mt-2">{{ $message }}</div>
+                                <div class="invalid-feedback mt-2 ml-3">{{ $message }}</div>
                             @enderror
                         </div>
 
