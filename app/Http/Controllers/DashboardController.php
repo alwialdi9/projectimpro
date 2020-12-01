@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\ListEvent;
+use Illuminate\Support\Facades\DB;
 
 class DashboardController extends Controller
 {
@@ -13,6 +15,27 @@ class DashboardController extends Controller
      */
     public function index()
     {
+        $date = date('Y-m-d');
+        $list = ListEvent::all();
+        foreach ($list as $ev) {
+            $date1 = $ev['mulai_acara'];
+            $date2 = $ev['akhir_acara'];
+
+            if ($date1 == $date) {
+                $status = "Sedang Berlangsung";
+            }
+            if ($date2 < $date) {
+                $status = "Selesai";
+            }
+            if ($date1 > $date) {
+                $status = "Akan Datang";
+            }
+
+            DB::table('list_event')->where('id', $ev['id'])->update([
+                'status' => $status
+            ]);
+        }
+
         $title = 'Dashboard';
         return view('dashboard', compact('title'));
     }

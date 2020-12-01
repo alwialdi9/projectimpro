@@ -62,9 +62,9 @@
                       </div>
 
                       <div class="mt-3 sosmed">
-                        <a href="" class="mx-3 img-sosmed"><img src="img/AssetLogin/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="" width="30" height="30" class="btn-google"></a>
+                        <a href="#" class="mx-3 img-sosmed"><img src="img/AssetLogin/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="" width="30" height="30" class="btn-google"></a>
 
-                        <a href="" class="mx-3 img-sosmed"><img src="img/AssetLogin/d2e5359f8402cb8d3d7b22c463f9013b.png" alt="" width="30" height="30" class="btn-fb"></a>
+                        <a href="#" class="mx-3 img-sosmed"><img src="img/AssetLogin/d2e5359f8402cb8d3d7b22c463f9013b.png" alt="" width="30" height="30" class="btn-fb"></a>
                       </div>
 
                       <h2 class="text-center mt-4 forgot"><span style="opacity: 65%;">Dont have an Account?</span><a href="{{ url('/register') }}"> Sign Up</a></h2>
