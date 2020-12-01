@@ -25,10 +25,10 @@
                         <img class="img2" src="img/AssetBukti/Rectangle 17.png">
 
                         <div class="row mt-5">
-                            <div class="col-sm mt-4"><iframe width="180" height="120" src="https://www.youtube.com/embed/vJkeg1VZc8E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                            <div class="col-sm mt-4"><iframe width="180" height="120" src="https://www.youtube.com/embed/2B6Ifg52fCo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                            <div class="col-sm mt-4"><iframe width="180" height="120" src="https://www.youtube.com/embed/yt8ZL_-DoPc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                            <div class="col-sm mt-4"><iframe width="180" height="120" src="https://www.youtube.com/embed/vJkeg1VZc8E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="col-sm mt-4"><iframe width="180" height="120" src="https://www.youtube.com/embed/zsTG7KhseTc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="col-sm mt-4"><iframe width="180" height="120" src="https://www.youtube.com/embed/q5sky56o9sE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="col-sm mt-4"><iframe width="180" height="120" src="https://www.youtube.com/embed/ISV3x6THEEg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="col-sm mt-4"><iframe width="180" height="120" src="https://www.youtube.com/embed/dpgRfiH14SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                             
                             <div><a href="" class=""><img src="img/AssetBukti/Path 23.png" alt="" width="70" height="70"  class="mx -n5  btn-next mt-5"></a></div>
 
