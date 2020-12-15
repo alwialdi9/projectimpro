@@ -14,7 +14,7 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $title = 'Sign In';
         return view('auth.signin', compact('title'));
@@ -25,8 +25,9 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
+        $request->session()->forget('addSuccess');
         $title = 'Sign Up';
         return view('auth.signup', compact('title'));
     }
@@ -64,9 +65,14 @@ class AuthController extends Controller
             'email' => $request->email,
             'nomor_hp' => '0' . $request->nomor_hp,
             'password' => Hash::make($request->password),
+            'google_id' => '0',
         ]);
 
-        Session::flash('addSuccess', 'Your account has been successfully registered');
+        // $request->session()->flash('addSuccess', 'Your account has been successfully registered');
+
+        session()->flash('addSuccess', 'Your account has been successfully registered');
+
+        // Session::flash('addSuccess', 'Your account has been successfully registered');
         return redirect('login')->with('alertSuccess', 'Success');
     }
 

@@ -35,6 +35,6 @@ class CreateDataEventTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('data_event');
+        Schema::dropIfExists('tb_data_event');
     }
 }

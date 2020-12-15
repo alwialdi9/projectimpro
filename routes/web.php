@@ -17,6 +17,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'DashboardController@index');
 Route::get('/dashboard', 'DashboardController@index');
 
+//googleauth
+Route::get('auth/google', 'GoogleController@redirectToGoogle');
+Route::get('google/callback', 'GoogleController@handleGoogleCallback');
+
+//facebookauth
+Route::get('auth/facebook', 'FacebookController@redirectToFacebook');
+Route::get('facebook/callback', 'FacebookController@handleFacebookCallback');
+
 //Event
 Route::get('/event', 'EventController@create');
 Route::post('/event-create', 'EventController@store');
@@ -35,4 +43,4 @@ Route::post('/signin', 'AuthController@signin');
 Route::get('/siapakita', 'AboutController@index');
 
 //Evidence
-Route::get('/bukti','BuktiController@index');
+Route::get('/bukti', 'BuktiController@index');
