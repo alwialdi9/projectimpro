@@ -1,17 +1,29 @@
-.event{
-    background: url('../img/AssetEvent/EOTF-590.png') no-repeat;
-    background-size: cover;
-    height: 100vh;
 
+
+.event{
+    @include bg-responsive('../img/AssetEvent/EOTF-590.png', 'center', 'center');
+    height: 100vh;
+   
+    @include responsive(md){
+        height: 38rem;
+    }
     .container{
-        
+        position: relative;
+        top: 4rem;
+
         &-form{
             background: $secondary-color;
-            position: relative;
             border-radius: 25px;
-            top: 7.5rem;
             padding: 3rem;
             letter-spacing: 1px;
+
+            @include responsive(md){
+                width: 23rem;
+                margin: auto;
+            }
+            @include responsive(lg){
+                width: 23rem;
+            }
             &-judul{
                 font-family: GilroyBold;
                 font-size: 1.5rem;

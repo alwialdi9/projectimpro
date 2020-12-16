@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @font-face {
@@ -103,7 +104,8 @@
   position: absolute;
   top: 70%;
   left: 60%;
-  transform: translate(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%) translateY(-50%);
+          transform: translate(-50%) translateY(-50%);
   text-align: center;
   width: 80%;
   font-size: 3rem;
@@ -173,6 +175,8 @@
 
 .container-col3 .social-icons {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 0.5rem;
@@ -184,9 +188,15 @@
   height: 40px;
   background-color: #d5d5c9;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container-col3 .social-icons li:hover {
@@ -266,18 +276,43 @@
 }
 
 .event {
-  background: url("../img/AssetEvent/EOTF-590.png") no-repeat;
+  background: url("../img/AssetEvent/EOTF-590.png");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: "center" "center";
+  background-attachment: fixed;
   height: 100vh;
+}
+
+@media screen and (max-width: 910px) {
+  .event {
+    height: 38rem;
+  }
+}
+
+.event .container {
+  position: relative;
+  top: 4rem;
 }
 
 .event .container-form {
   background: #d5d5c9;
-  position: relative;
   border-radius: 25px;
-  top: 7.5rem;
   padding: 3rem;
   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 910px) {
+  .event .container-form {
+    width: 23rem;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .event .container-form {
+    width: 23rem;
+  }
 }
 
 .event .container-form-judul {
@@ -315,8 +350,14 @@
 }
 
 .event-regist {
-  height: 140vh;
+  height: 55rem;
   background: #d5d5c9;
+}
+
+@media screen and (max-width: 1200px) {
+  .event-regist {
+    height: 55rem;
+  }
 }
 
 .container-event {
@@ -356,6 +397,7 @@
   background: #3e3e3d;
   color: #ffffff;
   font-weight: 800;
+  width: 5rem;
 }
 
 .container-event-form .btn-event-regist:hover {
@@ -372,6 +414,12 @@
   background: #fff;
   position: relative;
   top: 5%;
+}
+
+@media screen and (max-width: 660px) {
+  .container-eventlist {
+    width: 28rem;
+  }
 }
 
 .container-eventlist .row .col-11 {
@@ -391,3 +439,4 @@ body {
   background: #ff8400;
   overflow-x: hidden;
 }
+/*# sourceMappingURL=main.css.map */

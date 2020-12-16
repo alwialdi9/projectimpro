@@ -51,6 +51,14 @@ $font-tebel: 800;
     box-shadow: $x $y $blur $color;
 }
 
+@mixin bg-responsive($bg, $pos1, $pos2){
+    background: url($bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: $pos1 $pos2;
+    background-attachment: fixed;
+}
+
 // html {
 //     font-size: 62.5%;
 // }

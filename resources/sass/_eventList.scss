@@ -8,6 +8,9 @@
     position: relative;
     top: 5%;
 
+    @include responsive(sm){
+        width: 28rem;
+    }
     .row{
        
         .col-11{

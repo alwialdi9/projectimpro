@@ -1,6 +1,13 @@
 .event-regist{
-    height: 140vh;
+    height: 55rem;
     background: $secondary-color;
+
+    @include responsive(lg){
+        height: 55rem;
+    }
+    // @include responsive(xl){
+    //     height: 60rem;
+    // }
 }
 .container-event{
     position: relative;
@@ -9,6 +16,7 @@
     font-family: GilroyBold;
     letter-spacing: 1px;
 
+   
     &-text{
         color: #3e3e3d;
     }
@@ -37,6 +45,7 @@
             background: #3e3e3d;
             color: #ffffff;
             font-weight: $font-tebel;
+            width: 5rem;
         }
 
         .btn-event-regist:hover{

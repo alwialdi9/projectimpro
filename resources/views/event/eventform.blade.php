@@ -15,7 +15,7 @@
 <main>
     <section class="event">
         <div class="container">
-            <div class="container-form col-4">
+            <div class="container-form col-lg-4">
                 <h2 class="container-form-judul text-center">Kami Akan Membantu Event Kamu</h2>
                 <form class="inputEvent" action="{{ url('/event-register') }}" method="post" enctype="multipart/form-data">
                     @csrf
