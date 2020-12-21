@@ -9,6 +9,11 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.23/af-2.3.5/b-1.6.5/fc-3.3.2/fh-3.1.7/r-2.2.6/sc-2.0.3/sb-1.0.1/sp-1.2.2/datatables.min.css"/>
+ 
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.23/af-2.3.5/b-1.6.5/fc-3.3.2/fh-3.1.7/r-2.2.6/sc-2.0.3/sb-1.0.1/sp-1.2.2/datatables.min.js"></script>
+
     <title>S.I.P.A &mdash; {{ $title }}</title>
 </head>
 <body>

@@ -60,7 +60,7 @@
 
                         <div class="form-group">
                                 <label for="deskripsi">Deskripsi Acara</label>
-                                <textarea class="form-control is-invalid" id="deskripsi" rows="6" name="deskripsi"></textarea>
+                                <textarea class="form-control" id="deskripsi" rows="6" name="deskripsi"></textarea>
 
                                 @error('deskripsi')
                                 <div class="alert alert-danger">{{ $message }}</div>

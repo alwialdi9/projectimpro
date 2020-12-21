@@ -31,6 +31,11 @@ class GoogleController extends Controller
         $user = Socialite::driver('google')->stateless()->user();
         $finduser = User::where('google_id', $user->id)->first();
 
+        // if ($findemail->facebook_id == null) {
+        //     User::where('email', $user->email)
+        //         ->update(['facebook_id' => $user->id]);
+        // }
+
         if ($finduser) {
             Session::put('nama', $finduser->nama);
             Session::put('email', $finduser->email);

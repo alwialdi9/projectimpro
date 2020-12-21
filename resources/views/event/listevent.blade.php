@@ -12,7 +12,7 @@
             <div class="row justify-content-center">
                 <div class="col-11">
                     <h2 class="text-center judul-text">Event Hari Ini</h2>
-                    <table class="table text-center">
+                    <table class="table text-center" id="table-event">
                         <thead>
                           <tr class="table-edit">
                             <th scope="col">No</th>
@@ -23,7 +23,7 @@
                             <th scope="col">Status</th>
                           </tr>
                         </thead>
-                        <tbody class="table-body">
+                        <tbody class="table-body table-hover">
                           @foreach ($event as $e)
                           <tr>
                             <th scope="row">{{ $loop->iteration }}</th>
@@ -40,6 +40,13 @@
             </div>
         </div>
     </section>
+
+    <script>
+$('#table-event').DataTable( {
+    responsive: true
+} );
+      </script>
+
 </main>
 
 

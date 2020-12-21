@@ -18,7 +18,11 @@ class FacebookController extends Controller
      */
     public function redirectToFacebook()
     {
-        return Socialite::driver('facebook')->stateless()->redirect();
+        return Socialite::driver('facebook')->fields([
+            'first_name', 'last_name', 'email', 'gender', 'birthday'
+        ])->scopes([
+            'email', 'user_birthday'
+        ])->stateless()->redirect();
     }
 
     /**
@@ -30,19 +34,29 @@ class FacebookController extends Controller
     {
         $user = Socialite::driver('facebook')->stateless()->user();
         $finduser = User::where('facebook_id', $user->getId())->first();
+        $findemail = User::where('email', $user->email)->first();
 
-        if ($user->getEmail() == null) {
-            $userEmail = $user->getName();
+        // dd($finduser, $user);
+
+        if ($user->email == null) {
+            $userEmail = $user->name;
+        } else {
+            $userEmail = $user->email;
         }
-        // dd($user);
-        if ($finduser) {
-            Session::put('nama', $finduser->nama);
-            Session::put('email', $finduser->email);
+
+        if ($findemail->facebook_id == null) {
+            User::where('email', $user->email)
+                ->update(['facebook_id' => $user->id]);
+        }
+
+        if ($finduser || $findemail) {
+            Session::put('nama', $user->name);
+            Session::put('email', $userEmail);
             Session::put('login', TRUE);
             return redirect('/')->with('success');
         } else {
             User::create([
-                'nama' => $user->getName(),
+                'nama' => $user->name,
                 'email' => $userEmail,
                 'nomor_hp' => '0',
                 'facebook_id' => $user->getId(),
