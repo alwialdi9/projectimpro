@@ -66,18 +66,18 @@ $font-tebel: 800;
 @mixin responsive($breakpoint){
     
     @if $breakpoint == xs{
-        @media screen and (max-width: 500px){@content};
+        @media (max-width: 575.98px){@content};
     }
     @if $breakpoint == sm{
-        @media screen and (max-width: 660px){@content};
+        @media (min-width: 576px) and (max-width: 767.98px){@content};
     }
     @if $breakpoint == md{
-        @media screen and (max-width: 910px){@content};
+        @media (min-width: 768px) and (max-width: 991.98px){@content};
     }
     @if $breakpoint == lg{
-        @media screen and (max-width: 1200px){@content};
+        @media (min-width: 992px) and (max-width: 1199.98px){@content};
     }
     @if $breakpoint == xl{
-        @media screen and (max-width: 1500px){@content};
+        @media (min-width: 1200px){@content};
     }
 }

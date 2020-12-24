@@ -1,137 +1,266 @@
-.dashboard{
+.bg-dashboard{
     background: url('../img/AssetDasboard/Group\ 29.png') no-repeat;
     background-size: cover;
-    height: 100vh;
     width: 100%;
-    background-position: 220px -140px;
-
-        .img-background-2{
-            position: absolute;
-            width: 50%;
-            top: 87%;
-            right: 56%;
+    background-position: 220px -210px;
+    height: 100vh;
+    @include responsive(xs){
+        background-position: -220px -150px;
+        height: 120vh;
+    }
+    @include responsive(sm){
+        background-position: -10px -150px;
+        height: 102.5vh;
+    }
+    @include responsive(md){
+        background-position: 100px -150px;
+        height: 107.5vh;
+    }
+    @include responsive(lg){
+        background-position: 180px -150px;
+        height: 107.5vh;
+    }
+    .container{
+        margin-left: 5rem;
+        @include responsive(xs){
+            margin: 0;
         }
-}
-
-.container{
-
-    &-col{
-        left: 30%;
-        top: 150px;
-        position: relative;
-
-        &-title{
-            color: $primary-color;
-            width: 50%;
-            .primary-text{
+       .text-konten{
+           margin-top: 2.5rem;
+           margin-left: 5rem;
+           color: $primary-color;
+           
+            @include responsive(xs){
+                margin: 1rem;
+            }  
+            @include responsive(lg){
+                margin-left: 2rem;
+            } 
+           .primary-text{
                 font-family: Gilbert;
                 font-size: 2.5rem;
+                @include responsive(xs){
+                    font-size: 1.8rem;
+                }  
+                @include responsive(sm){
+                    font-size: 1.8rem;
+                }  
+                @include responsive(md){
+                    font-size: 2rem;
+                }  
+                @include responsive(lg){
+                    font-size: 2rem;
+                }              
             }
-
             .secondary-text{
                 font-family: Gilroy;
                 font-weight: $font-tebel;
                 font-size: 1.2rem;
                 margin-left: -2rem;
                 letter-spacing: 2px;
+               
+                @include responsive(xs){
+                    font-size: 0.9rem;
+                    margin-left: 0.1rem;
+                    width: 20rem;
+                } 
+                @include responsive(sm){
+                    font-size: 0.9rem;
+                }  
+                @include responsive(md){
+                    font-size: 1rem;
+                }  
+                @include responsive(lg){
+                    font-size: 1rem;
+                }           
             }
-        }
-
-        &-btn{
-            @include buttonWrap;
-            position: relative;
-            bottom: 12rem;
-            left: 20rem;
-            width: 11.5rem;
-           
-            .btn1{
-                @include button;
-
-                &:hover{
-                    background-color: transparent;
-                    color: $primary-color;
-                }
+       }
+       .text-konten2{
+        
+           @include responsive(xs){
+               position: relative;
+               bottom: 2rem;
+           } 
+           img{
+            object-fit: cover;
+            @include responsive(xs){
+                width: 200px;
+                margin-left: 15rem;
+            }
+            @include responsive(sm){
+                width: 220px;
+            }
+            @include responsive(md){
+                width: 250px;
+            }  
+            @include responsive(lg){
+                width: 250px;
             } 
-        }
-
-        .img1{
-            position: relative;
-            left: 30rem;
-            bottom: 15rem;
-        }
+           }
+           .btn{
+                @include buttonWrap;
+                position: relative;
+                right: 5rem;
+                @include responsive(xs){
+                    bottom: 10rem;
+                    left: 2rem;
+                    width: 8.5rem;
+                }
+                .btn1{
+                    @include button;
+                    position: relative;
+                    left: 0;
+                    @include responsive(xs){
+                        top: 0;
+                        width: 7.5rem;
+                    }
+                    &:hover{
+                        background-color: transparent;
+                        color: $primary-color;
+                    }
+                }
+           }
+       }
     }
-
-    //countdown
-    &-col2{
-        position: relative;
-        width: 20%;
-        left: -2rem;
-        height: 200px;
-        font-family: Gilbert;
-
-        &-countdown{
-            position: absolute;
-            top: 70%;
-            left: 60%;
-            transform: translate(-50%) translateY(-50%);
-            text-align: center;
-            width: 80%;
-            font-size: 3rem;
-            color: $primary-color;
-
-            td:nth-child(odd){
-                padding: 0 15px 0 15px;
-                background: #edede8;
-                border-radius: 25%;
+    .container-fluid{
+        background: url('../img/AssetDasboard/Path 11.png') no-repeat;
+        background-size: contain;
+        height: 22rem;
+        background-position: -110px;
+        @include responsive(xs){
+            width: 185%;
+            height: 28rem;
+            background-position: -110px 100px; 
+            margin: 5rem 0 0 0;
+            background-size: cover;
+        }
+        @include responsive(sm){
+            height: 18rem;
+            margin-top: 5rem;
+        }
+        .countdown{
+            margin: 10rem 0 0 10rem;
+            @include responsive(xs){
+                margin-top: 15rem;
             }
-            td:nth-child(even){
-                padding: 10px;
-                color: black;
+            @include responsive(sm){
+                margin: 4rem 0 0 0;
+            }
+            .col-countdown{            
+                transform: translate(-50%) translateY(-50%);
+                text-align: center;
+                width: 80%;
+                font-size: 2.5rem;
+                color: $primary-color;
+                font-family: Gilbert;
+                @include responsive(xs){
+                    width: 100px;
+                    margin-left: 5rem;
+                }
+                @include responsive(sm){
+                    width: 250px;
+                    font-size: 1.5rem;
+                    margin: 2rem 0 0 7.5rem;
+                    height: 50px;
+                }
+                td:nth-child(odd){
+                    padding: 0 15px 0 15px;
+                    background: #edede8;
+                    border-radius: 25%;
+                    @include responsive(sm){
+                        padding: 1px;
+                    }
+                }
+                td:nth-child(even){
+                    padding: 10px;
+                    color: black;
+                    @include responsive(sm){
+                        padding: 0;
+                    }
+                }
+                
             }
         }
-
-        &-title2{
-            position: absolute;
-            top: 13rem;
-
-            h4{
+        .wrap{
+            font-family: Gilbert;
+            margin-top: -1rem;
+            .text{
                 font-size: 1.7rem;
+               
+                @include responsive(xs){
+                    padding-left: 5rem;
+                }
+                @include responsive(md){
+                    font-size: 1rem;
+                    margin-top: -2rem;
+                }
                 strong{
                     color: $primary-color;
                     font-weight: $font-tipis;
                 }
+            
+                
             }
-        }
-
-        &-btn{
-            @include button;
-            width: 7rem !important;
-            font-size: 1rem !important;
-            position: absolute;
-            top: 115%;
-            left: 85%;
-
-            &:hover{
-                background-color: transparent;
-                color: $primary-color;
-                border-color: $primary-color;
+            .wrapper{
+              
+                position: relative;
+                @include responsive(xs){
+                    position: relative;
+                    bottom: 3rem;
+                    left: 15rem;
+                }
+                @include responsive(sm){
+                    top: -3rem;
+                    left: 9.5rem;
+                }
+                &-btn{
+                    @include button;
+                    width: 7rem !important;
+                    font-size: 1rem !important;
+                    &:hover{
+                        background-color: transparent;
+                        color: $primary-color;
+                        border-color: $primary-color;
+                    }
+                                
+                }
             }
         }
     }
-
-    //footer
-    &-col3{
-        width: 30%;
-        position: relative;
-        left: 58rem;
-        top: 3rem;
-        
+    footer{
+       position: relative;
+       bottom: 3.5rem;
+       .wrapper-footer{
+        &-konten{
+            left: -3rem;
+            position: relative;
+            @include responsive(xs){
+                left: 19rem;
+            }
+            @include responsive(sm){
+                left: 10rem;
+                top: 0.5rem;    
+            }
+            @include responsive(md){
+                left: -15rem;    
+            }
+            @include responsive(lg){
+                left: -2rem;
+            } 
+        }
         &-text{
-          position: absolute;
-          left: -5rem;
-          top: 1rem;
-          font-family: Gilbert;
-          color: $secondary-color;
+            margin: 1rem 0 0 -5rem; 
+            font-family: Gilbert;
+            color: $secondary-color;
+            @include responsive(xs){
+                color: $primary-color;
+            }
+            @include responsive(sm){
+                color: $primary-color;
+            }
+            @include responsive(md){
+                color: $primary-color;
+            }
         }
         .social-icons{
             list-style-type: none;
@@ -147,20 +276,22 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
+           
                 &:hover{
                     background-color: #999999;
                 }
-    
+               
                 i{
                     font-size: 1.5rem;
                     color: $primary-color;
-                   
+                              
                 }
             }
+         }
+                   
         }
-    }
-}
+    }       
+} 
 
 //nav
 .navbar{
@@ -176,8 +307,13 @@
         margin-left: 10rem;
         font-family: Gilroy;
         font-weight: $font-sedang;
-        
+        @include responsive(xs){
+            margin-left: 0;
+        }
         @include responsive(sm){
+            margin-left: 0;
+        }
+        @include responsive(md){
             margin-left: 0;
         }
         @include responsive(lg){
@@ -186,8 +322,13 @@
 
         li:nth-child(odd){
             padding: 0 10rem 0 10rem;
-            
+            @include responsive(xs){
+                padding: 0;
+            }
             @include responsive(sm){
+                padding: 0;
+            }
+            @include responsive(md){
                 padding: 0;
             }
             @include responsive(lg){

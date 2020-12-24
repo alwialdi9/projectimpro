@@ -10,51 +10,58 @@
                 </script>
             @endif
 
-<main>
-    <section class="dashboard">
-        <img src="img/AssetDasboard/Path 11.png" class="img-background-2">
-            <div class="container">
-                <div class="container-col">
-                    <div class="container-col-title">
-                        <h2 class="primary-text">Kamu Mau Buat Event?</h2>
-                        <p class="secondary-text">Yuk ceritakan event apa yang ingin kamu buat <br> bersama kami.</p>
-                    </div>
-                    
-                        <img class="img1" src="img/AssetDasboard/polisi.png" width="300">
-                            <div class="container-col-btn">
-                            <a href="{{url('/event')}}" class="btn btn-primary btn1">Join</a>
-                        </div>
+<section class="bg-dashboard">
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-md-5 col-sm-6 text-konten">
+                <h2 class="primary-text">Kamu Mau Buat Event?</h2>
+                <p class="secondary-text">Yuk ceritakan event apa yang ingin kamu buat bersama kami.</p>
+            </div>
+            <div class="col-md-4 col-sm-4 text-konten2">
+                <img class="img1" src="img/AssetDasboard/polisi.png" width="300">  
+                <div class="btn">
+                    <a href="{{url('/event')}}" class="btn btn-primary btn1">Join</a>
                 </div>
-                <div class="container-col2">
-                        <table class="container-col2-countdown">
-                            <tr>
-                                <td id="hours">0</td>
-                                <td>:</td>
-                                <td id="minutes" >00</td>
-                                <td>:</td>
-                                <td id="seconds">00</td>
-                            </tr>    
-                        </table>
-                    <div class="container-col2-title2">
-                        <h4>Ada <strong>Event</strong> Apa <br>Hari Ini?</h4>
-                    </div>
-                <a href="{{url('/event-list')}}" class="btn btn-primary container-col2-btn">Lihat</a>
-                </div>
-            
-
-
-                <footer>
-                    <div class="container-col3">
-                        <p class="container-col3-text">Follow Us</p>
-                          <ul class="social-icons">
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 countdown">
+                <table class="col-countdown">
+                    <tr>
+                        <td id="hours">0</td>
+                        <td>:</td>
+                        <td id="minutes" >00</td>
+                        <td>:</td>
+                        <td id="seconds">00</td>
+                    </tr>    
+                </table>
+            </div>
+         </div>
+         <div class="row justify-content-start wrap">
+             <div class="col-md-2 text">
+                <h4>Ada <strong>Event</strong> Apa <br>Hari Ini?</h4>
+             </div>
+             <div class="col-md-2 wrapper">
+                <a href="{{url('/event-list')}}" class="btn btn-primary wrapper-btn">Lihat</a>
+             </div>
+        </div> 
+      </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row wrapper-footer justify-content-end">
+                <div class="col-md-2 wrapper-footer-konten mr-5">
+                    <p class="wrapper-footer-text">Follow Us</p>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                     </ul>
                 </div>
             </div>
-        </footer>
-    </section>
-
-</main>
+        </div>
+    </footer>
+</section>
 @endsection
