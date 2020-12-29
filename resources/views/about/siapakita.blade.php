@@ -17,9 +17,9 @@
                   
                       <div class="row">
                           <div class="gambar">
-                          <img class="img1" src="img/AssetSiapaKita/sipa3.png" width="360" >
+                          <img class="img1" src="img/AssetSiapaKita/sipa3.png"  >
                           </div>
-                          <div class="col-md-2col-sm-8 text1"><p>Sistem Informasi Perizinan Acara adalah sistem yang akan membantu kamu
+                          <div class="col-md-2-col-sm-8 text1"><p>Sistem Informasi Perizinan Acara adalah sistem yang akan membantu kamu
                             dalam mengurus persuratan dan perizinan ketika kamu ingin membuat acara. Dari mulai acara formal,
                             non-formal, sampai acara keagamaan.
                           </p>

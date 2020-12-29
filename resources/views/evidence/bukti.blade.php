@@ -9,30 +9,42 @@
 <main>
     <section class="bukti">
         <div class="container">
-            <img src="img/AssetBukti/Group 30.png" class="img-background-2">
-
+         
                 <div class="jumbotron">
                 <h3 class="display-4">Dokumentasi</h3>
                 </div>
-                <div class="row mb-5">
-                    <div class="col sm-12 mb-5 text"><p>Berikut event yang telah berhasil<br>
-                                        Menyelenggarakan berbagai acara di</br>masyarakat
+            <div class="row ">
+                    <div class="col-md-2-col-sm-8 text1"><p>Berikut ini merupakan event yang telah berhasil<br>
+                                        Diselenggarakan melalui </br>Kami
                                       </p>
                     </div>
-                </div>
+                    <!-- GAMBAR PANAH KEBAWAH -->
+                    <div class="gambar1">
+                        <img class="img1" src="img/AssetBukti/path 21.png"  >
+                    </div>
+                    <!-- GAMBAR BAR -->
+                    <div class="gambar2">
+                        <img class="img2" src="img/AssetBukti/Rectangle 17.png"  >
+                    </div>
 
-                        <img class="img1" src="img/AssetBukti/Path 21.png" width="100">
-                        <img class="img2" src="img/AssetBukti/Rectangle 17.png">
+                    
 
-                        <div class="row mt-5">
-                            <div class="col-sm mt-4"><iframe width="180" height="120" src="https://www.youtube.com/embed/zsTG7KhseTc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                            <div class="col-sm mt-4"><iframe width="180" height="120" src="https://www.youtube.com/embed/q5sky56o9sE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                            <div class="col-sm mt-4"><iframe width="180" height="120" src="https://www.youtube.com/embed/ISV3x6THEEg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                            <div class="col-sm mt-4"><iframe width="180" height="120" src="https://www.youtube.com/embed/dpgRfiH14SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                            
-                            <div><a href="" class=""><img src="img/AssetBukti/Path 23.png" alt="" width="70" height="70"  class="mx -n5  btn-next mt-5"></a></div>
+                    <div class="row kolom">
+                            <div class="col-sm mt-1 "><iframe width="180" height="120" src="https://www.youtube.com/embed/zsTG7KhseTc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="col-sm mt-1 "><iframe width="180" height="120" src="https://www.youtube.com/embed/q5sky56o9sE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="col-sm mt-1 "><iframe width="180" height="120" src="https://www.youtube.com/embed/ISV3x6THEEg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="col-sm mt-1 "><iframe width="180" height="120" src="https://www.youtube.com/embed/dpgRfiH14SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div class="col-sm mt-1 "><iframe width="180" height="120" src="https://www.youtube.com/embed/dpgRfiH14SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                
+                                
+                    </div>
+                    <!-- GAMBAR PANAH KEKANAN -->
+                    <div><a href="" class=""><img src="img/AssetBukti/Path 23.png" alt="" width="90" height="90"  class="btn-kanan"></a></div>
+                
 
-                            </div>
+                        
+
+                       
                                
             </div>       
         </div>
