@@ -2,6 +2,9 @@
     height: 55rem;
     background: $secondary-color;
 
+    @include responsive(xs){
+        height: 57rem;
+    }
     @include responsive(lg){
         height: 55rem;
     }

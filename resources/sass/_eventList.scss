@@ -1,29 +1,30 @@
-.event-list{
+.event-list {
     height: 100vh;
     background: $secondary-color;
 }
 
-.container-eventlist{
+.container-eventlist {
     background: #fff;
     position: relative;
     top: 5%;
 
-    @include responsive(sm){
-        width: 28rem;
-    }
-    .row{
-       
-        .col-11{
-            padding: 2rem 0 0 0;
-            
-            .judul-text{
+    .row {
+        @include responsive(sm) {
+            width: 36rem;
+            margin-left: -2rem;
+        }
+
+        .col {
+            .judul-text {
                 color: $primary-color;
                 font-family: Gilbert;
             }
 
-            table{
-                margin-top: 1.5rem;
+            .table-responsive {
+                table {
+                    margin-top: 1.5rem;
+                }
             }
-        } 
+        }
     }
 }

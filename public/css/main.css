@@ -632,6 +632,12 @@
   background: #d5d5c9;
 }
 
+@media (max-width: 575.98px) {
+  .event-regist {
+    height: 57rem;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .event-regist {
     height: 55rem;
@@ -695,21 +701,18 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .container-eventlist {
-    width: 28rem;
+  .container-eventlist .row {
+    width: 36rem;
+    margin-left: -2rem;
   }
 }
 
-.container-eventlist .row .col-11 {
-  padding: 2rem 0 0 0;
-}
-
-.container-eventlist .row .col-11 .judul-text {
+.container-eventlist .row .col .judul-text {
   color: #ff8400;
   font-family: Gilbert;
 }
 
-.container-eventlist .row .col-11 table {
+.container-eventlist .row .col .table-responsive table {
   margin-top: 1.5rem;
 }
 

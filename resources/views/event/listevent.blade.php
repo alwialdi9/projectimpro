@@ -10,8 +10,9 @@
     <section class="event-list">
         <div class="container container-eventlist">
             <div class="row justify-content-center">
-                <div class="col-11">
-                    <h2 class="text-center judul-text">Event Hari Ini</h2>
+                <div class="col">
+                    <h2 class="text-center judul-text mt-2">Event Hari Ini</h2>
+                    <div class="table-responsive">
                     <table class="table text-center" id="table-event">
                         <thead>
                           <tr class="table-edit">
@@ -36,6 +37,7 @@
                           @endforeach
                         </tbody>
                       </table>
+                    </div>
                 </div>
             </div>
         </div>
