@@ -75,8 +75,8 @@
         </div>
     </div>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
 <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
-<script src="{{asset('assets/js/countdown.js')}}"></script>
 <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
 </body>
 

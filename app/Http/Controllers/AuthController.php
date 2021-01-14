@@ -17,7 +17,7 @@ class AuthController extends Controller
     public function index(Request $request)
     {
         $title = 'Sign In';
-        return view('auth.signin', compact('title'));
+        return view('auth.signinout', compact('title'));
     }
 
     /**

@@ -38,20 +38,21 @@
                   <p class="nav-user">
                       @if (Session::has('nama'))
                           Hi, {{ Session::get('nama') }}
+                          <ul class="nav-icon ">
+                            <li class="nav-item dropdown icon">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user-circle"></i>
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="{{url('/logout')}}">Logout</a>
+                              </div>
+                            </li>
+                          </ul> 
                       @else
                       <a href="{{ url('/login') }}">Sign In</a> 
                       @endif
                     </p>
-                   <ul class="nav-icon ">
-                    <li class="nav-item dropdown icon">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-user-circle"></i>
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="{{url('/logout')}}">Logout</a>
-                      </div>
-                    </li>
-                  </ul> 
+                   
             </div>
           </nav>
     </header>
