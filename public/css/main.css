@@ -768,28 +768,10 @@
   display: inline-block;
 }
 
-
 .bukti .container .row .text-konten h4 {
   font-size: 34.5px;
   font-family: Gilroy;
   color: #ff8400;
-}
-
-@media (max-width: 1005px) {
-  .bukti .container .row {
-    height: 450px;
-  }
-
-  .bukti .container .row .text-konten {
-    margin: 1rem 0 0 0.5rem;
-    display: inline-block;
-  }
-
-  .bukti .container .row .text-konten h4 {
-    font-size: 32px;
-    font-family: Gilroy;
-    color: #000000;
-  }
 }
 
 .bukti .carousel-edit {
@@ -798,7 +780,65 @@
 }
 
 .bukti .carousel-edit .carousel-inner {
-  padding: 1.5rem 0 0 20rem;
+  margin: auto;
+}
+
+figure{
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+iframe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: auto;
+  float: left;
+  padding: 15px 0 0 10px;
+}
+
+@media (max-width: 1000px) {
+  .bukti .container .row .text {
+    background: #FF8400 no-repeat;
+  }
+
+  .bukti .container .row {
+    height: 450px;
+  }
+
+  .bukti .container .row .text-konten {
+    margin-top: 10px;
+    display: inline-block;
+  }
+
+  .bukti .container .row .text-konten h4 {
+    font-size: 32px;
+    font-family: Gilroy;
+    color: #fff;
+  }
+
+  /* .bukti .carousel-edit .carousel-inner {
+    padding: 1.5rem 0 0 5%;
+  } */
+
+  figure{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    overflow-x: auto;
+  }
+  
+  iframe{
+    flex: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    float: left;
+    padding: 15px 0 0 10px;
+  }
 }
 
 body {
