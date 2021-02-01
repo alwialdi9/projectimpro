@@ -1,6 +1,7 @@
 .bg-dashboard{
     background: url('../img/AssetDasboard/Group\ 29.png') no-repeat;
     background-size: cover;
+    // background: blue;
     width: 100%;
     background-position: 220px -210px;
     height: 100vh;
@@ -89,9 +90,11 @@
             }
             @include responsive(sm){
                 width: 220px;
+                
             }
             @include responsive(md){
                 width: 250px;
+                background: red;
             }  
             @include responsive(lg){
                 width: 250px;
@@ -125,6 +128,7 @@
     .container-fluid{
         background: url('../img/AssetDasboard/Path 11.png') no-repeat;
         background-size: contain;
+        // background: red;
         height: 22rem;
         background-position: -110px;
         @include responsive(xs){
@@ -136,7 +140,10 @@
         }
         @include responsive(sm){
             height: 18rem;
-            margin-top: 5rem;
+            margin-top: 4.5rem;
+        }
+        @include responsive(md){
+            height: 24rem;
         }
         .countdown{
             margin: 10rem 0 0 10rem;
@@ -146,6 +153,7 @@
             @include responsive(sm){
                 margin: 4rem 0 0 0;
             }
+            
             .col-countdown{            
                 transform: translate(-50%) translateY(-50%);
                 text-align: center;
@@ -184,15 +192,23 @@
         .wrap{
             font-family: Gilbert;
             margin-top: -1rem;
+            // display: inline-block;
             .text{
                 font-size: 1.7rem;
                
                 @include responsive(xs){
                     padding-left: 5rem;
                 }
+                @include responsive(sm){
+                    font-size: 1rem;
+                    margin-top: 1rem;
+                    // background: red;
+                }
                 @include responsive(md){
                     font-size: 1rem;
-                    margin-top: -2rem;
+                    margin-top: 0.5rem;
+                    background: red;
+                    
                 }
                 strong{
                     color: $primary-color;
@@ -212,6 +228,10 @@
                 @include responsive(sm){
                     top: -3rem;
                     left: 9.5rem;
+                }
+                @include responsive(md){
+                    top: 2rem;
+                    // left: 9.5rem;
                 }
                 &-btn{
                     @include button;
@@ -236,10 +256,11 @@
             position: relative;
             @include responsive(xs){
                 left: 19rem;
+                bottom: 1rem;
             }
             @include responsive(sm){
                 left: 10rem;
-                top: 0.5rem;    
+                top: -0.1rem;    
             }
             @include responsive(md){
                 left: -15rem;    

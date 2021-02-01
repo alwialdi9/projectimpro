@@ -402,9 +402,9 @@ body {
     padding: 2rem;
     position: relative;;
     top: 3rem;
-    width: 7rem;
+    width: 10rem;
     height: 2rem;
-    left: 22rem;
+    left: 15rem;
   }
 }
 
@@ -416,8 +416,8 @@ body {
     border-color: #ffffff;
     padding: 2rem;
     position: relative;;
-    top: 1rem;
-    width: 8rem;
+    top: 2rem;
+    width: 10rem;
     height: 2rem;
     left: 14rem;
  
@@ -470,6 +470,11 @@ body {
   bottom: 0.5rem;
 }
 
+.siapakita .container .col-btn .btn-1:hover{
+  background: transparent;
+  color: #fff;
+}
+
 @media (max-width: 575.98px){
   .siapakita .container .col-btn .btn-1{
   border-radius: 50px;
@@ -477,7 +482,7 @@ body {
   border-color: white;
   padding: 0.5rem;
   position: absolute;
-  width: 5rem;
+  width: 8rem;
   font-family: gilroy;
   font-size: 1rem;
   color: #ff8400;
@@ -495,7 +500,7 @@ body {
   border-color: white;
   padding: 0.5rem;
   position: absolute;
-  width: 6rem;
+  width: 8rem;
   font-family: gilroy;
   font-size: 1rem;
   color: #ff8400;
