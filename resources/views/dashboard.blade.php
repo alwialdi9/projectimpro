@@ -11,7 +11,7 @@
             @endif
 
 <section class="bg-dashboard">
-    <div class="container">
+    <div class="container judul">
         <div class="row justify-content-end">
             <div class="col-md-5 col-sm-6 text-konten">
                 <h2 class="primary-text">Kamu Mau Buat Event?</h2>

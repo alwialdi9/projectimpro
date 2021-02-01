@@ -173,6 +173,7 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
   .bg-dashboard .container .text-konten2 img {
     width: 250px;
+    background: red;
   }
 }
 
@@ -244,7 +245,13 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
   .bg-dashboard .container-fluid {
     height: 18rem;
-    margin-top: 5rem;
+    margin-top: 4.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .bg-dashboard .container-fluid {
+    height: 24rem;
   }
 }
 
@@ -327,10 +334,18 @@
   }
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .bg-dashboard .container-fluid .wrap .text {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   .bg-dashboard .container-fluid .wrap .text {
     font-size: 1rem;
-    margin-top: -2rem;
+    margin-top: 0.5rem;
+    background: red;
   }
 }
 
@@ -355,6 +370,12 @@
   .bg-dashboard .container-fluid .wrap .wrapper {
     top: -3rem;
     left: 9.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .bg-dashboard .container-fluid .wrap .wrapper {
+    top: 2rem;
   }
 }
 
@@ -389,13 +410,14 @@
 @media (max-width: 575.98px) {
   .bg-dashboard footer .wrapper-footer-konten {
     left: 19rem;
+    bottom: 1rem;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .bg-dashboard footer .wrapper-footer-konten {
     left: 10rem;
-    top: 0.5rem;
+    top: -0.1rem;
   }
 }
 
