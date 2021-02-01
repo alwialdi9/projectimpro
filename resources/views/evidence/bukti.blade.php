@@ -6,51 +6,45 @@
 @endsection
 
 @section('content')
-<main>
-    <section class="bukti">
-        <div class="container">
-         
-                <div class="jumbotron">
-                <h3 class="display-4">Dokumentasi</h3>
-                </div>
-            <div class="row ">
-                    <div class="col-md-2-col-sm-8 text1"><p>Berikut ini merupakan event yang telah berhasil<br>
-                                        Diselenggarakan melalui </br>Kami
-                                      </p>
-                    </div>
-                    <!-- GAMBAR PANAH KEBAWAH -->
-                    <div class="gambar1">
-                        <img class="img1" src="img/AssetBukti/path 21.png"  >
-                    </div>
-                    <!-- GAMBAR BAR -->
-                    <div class="gambar2">
-                        <img class="img2" src="img/AssetBukti/Rectangle 17.png"  >
-                    </div>
 
-                    
-
-                    <div class="row kolom">
-                            <div class="col-sm mt-1 "><iframe width="180" height="120" src="https://www.youtube.com/embed/zsTG7KhseTc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                            <div class="col-sm mt-1 "><iframe width="180" height="120" src="https://www.youtube.com/embed/q5sky56o9sE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                            <div class="col-sm mt-1 "><iframe width="180" height="120" src="https://www.youtube.com/embed/ISV3x6THEEg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                            <div class="col-sm mt-1 "><iframe width="180" height="120" src="https://www.youtube.com/embed/dpgRfiH14SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                            <div class="col-sm mt-1 "><iframe width="180" height="120" src="https://www.youtube.com/embed/dpgRfiH14SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                                
-                                
+<section class="bukti">
+    <div class="container">
+        <h3 class="display-4 text-center">Bukti</h3>
+            <div class="row justify-content-center">
+                    <div class="col-md-8 text">
+                        <div class="text-konten text-center">
+                            <h4>Berikut bukti kami yang telah berhasil menyelenggarakan berbagai acara <br> di masyarakat.</h4>
+                        </div>   
+                    </div>              
+                </div>       
+            </div>
+            {{-- <i class="fas fa-arrow-down"></i>  --}}
+                <div id="carouselExampleIndicators" class="carousel slide carousel-edit" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <iframe width="180" height="120" src="https://www.youtube.com/embed/q5sky56o9sE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="180" height="120" src="https://www.youtube.com/embed/ISV3x6THEEg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="180" height="120" src="https://www.youtube.com/embed/dpgRfiH14SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        <iframe width="180" height="120" src="https://www.youtube.com/embed/zsTG7KhseTc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      <div class="carousel-item">
+                        <iframe width="180" height="120" src="https://www.youtube.com/embed/q5sky56o9sE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="180" height="120" src="https://www.youtube.com/embed/ISV3x6THEEg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="180" height="120" src="https://www.youtube.com/embed/dpgRfiH14SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        <iframe width="180" height="120" src="https://www.youtube.com/embed/zsTG7KhseTc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <!-- GAMBAR PANAH KEKANAN -->
-                    <div><a href="" class=""><img src="img/AssetBukti/Path 23.png" alt="" width="90" height="90"  class="btn-kanan"></a></div>
-                
-
-                        
-
-                       
-                               
-            </div>       
-        </div>
-  
-                
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+          
+            
     </section>
-
-</main>
+     
 @endsection

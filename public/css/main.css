@@ -716,6 +716,51 @@
   margin-top: 1.5rem;
 }
 
+.bukti {
+  background: transparent;
+  height: 115vh;
+}
+
+.bukti .container {
+  padding-top: 50px;
+  height: 500px;
+}
+
+.bukti .container h3 {
+  color: #fff;
+  font-family: Gilbert;
+}
+
+.bukti .container .row {
+  height: 350px;
+}
+
+.bukti .container .row .text {
+  background: url("../img/AssetBukti/Group 30.png") no-repeat;
+  background-size: contain;
+  margin-top: 50px;
+}
+
+.bukti .container .row .text-konten {
+  margin: 3rem 0 0 1rem;
+  display: inline-block;
+}
+
+.bukti .container .row .text-konten h4 {
+  font-size: 34.5px;
+  font-family: Gilroy;
+  color: #ff8400;
+}
+
+.bukti .carousel-edit {
+  background: #fff;
+  height: 180px;
+}
+
+.bukti .carousel-edit .carousel-inner {
+  padding: 1.5rem 0 0 20rem;
+}
+
 body {
   background: #ff8400;
   overflow-x: hidden;

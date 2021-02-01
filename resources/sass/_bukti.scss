@@ -1,0 +1,52 @@
+.bukti{
+    background: transparent;
+    height: 115vh;
+
+    .container{
+        padding-top: 50px;
+        height: 500px;
+        
+
+        h3{
+            color: #fff;
+            font-family: Gilbert;
+        }
+
+        .row{
+            // background: green;
+            height: 350px;
+           
+            .text{
+               background: url('../img/AssetBukti/Group 30.png') no-repeat;
+               background-size: contain;
+               margin-top: 50px;
+               &-konten{
+                //    background: red;
+                   margin: 3rem 0 0 1rem;
+                   display: inline-block;
+                  
+                   h4{
+                    font-size: 34.5px;
+                    font-family: Gilroy;
+                    color: $primary-color;
+                   }
+               }
+            }
+        }
+    }
+
+    // .fa-arrow-down{
+    //     position: relative;
+    //     margin: 0 0 10rem 40rem;
+    //     font-size: 100px;
+    //     color: $secondary-color;
+    // }
+
+    .carousel-edit{
+        background: #fff;
+        height: 180px;
+        .carousel-inner{
+           padding: 1.5rem 0 0 20rem;
+        }
+    }
+}
