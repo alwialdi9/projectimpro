@@ -746,10 +746,28 @@
   display: inline-block;
 }
 
+
 .bukti .container .row .text-konten h4 {
   font-size: 34.5px;
   font-family: Gilroy;
   color: #ff8400;
+}
+
+@media (max-width: 1005px) {
+  .bukti .container .row {
+    height: 450px;
+  }
+
+  .bukti .container .row .text-konten {
+    margin: 1rem 0 0 0.5rem;
+    display: inline-block;
+  }
+
+  .bukti .container .row .text-konten h4 {
+    font-size: 32px;
+    font-family: Gilroy;
+    color: #000000;
+  }
 }
 
 .bukti .carousel-edit {
